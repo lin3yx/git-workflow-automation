@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Dev tool to help automate the initialize phase of git workflow",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js init",
     "lint": "eslint src --ext .ts",
     "lint:fix": "yarn lint --fix",
     "prepare": "husky install"
@@ -13,7 +13,7 @@
   "author": "Lambert Lin",
   "license": "MIT",
   "dependencies": {
-    "chalk": "5.0.1",
+    "chalk": "4.1.2",
     "clear": "^0.1.0",
     "commander": "^9.4.0",
     "figlet": "^1.5.2"
